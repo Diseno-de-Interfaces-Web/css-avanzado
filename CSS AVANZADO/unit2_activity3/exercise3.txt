@@ -8,42 +8,43 @@ For each of the following <p> elements, list all the CSS rules that apply to its
     element=<body>
 
     What is the final color, and why?
-    Color: darkorange
-    The id="mission" is applied because the id is the most specific rule in the CSS.
+    Color:darkorange
+    #mission because the id is the most specific rule in the CSS.
 
-2-For <p id="experience">
-    List all rules that apply to its color:
+
+2-For <p id="team">
+    List all rules that apply to its color.
+    element=<p> 
+    element=<body>
+    class="text" 
+    style="color: darkblue
+
+    What is the final color, and why?
+    Color:darkblue
+    the autor inline styles has more importance 
+
+3-For <p id="experience">
+    List all rules that apply to its color.
     element=<p>
     element=<body>
-    id="experience"
-    class="text"
-    css rule=about p:last-child
+    id="experience" Selector Specificity: (1, 0, 0)
+    class="text" Selector Specificity: (0, 1, 0)
+    css rule=about p:last-child Selector Specificity: (1, 1, 1)
 
     What is the final color, and why?
     Color: green
-    The CSS rule of the about p:last-child specifies more.
-
-3-For <p class="intro">
-    List all rules that apply to its color:
-    element=<p>
-    element=<body>
-    class="intro"
-    class="text"
-
-    What is the final color, and why?
-    Color: blue
-    The class="intro" is applied because it is specified later in the CSS than the class="text".
+    the CSS rule of the about p:last-child specifies more
 
 4-For <p id="services-intro">
-    List all rules that apply to its color:
+    List all rules that apply to its color.
     element=<p>
     element=<body>
     id="services-intro"
-    class="text"
+    class="intro text"
 
     What is the final color, and why?
-    Color: red
-    The id="services-intro" is applied because the id is the most specific rule in the CSS.
+    Color:blue
+    the class="intro" is applied because it is specified later in the CSS than the class="text"
 
 5-For <p id="offer">
     List all rules that apply to its color.
