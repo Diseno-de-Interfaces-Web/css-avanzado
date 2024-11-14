@@ -1,0 +1,58 @@
+For each of the following <p> elements, list all the CSS rules that apply to its color, identify the final applied value, and explain why that value is used.
+
+1-For <p id="mission">
+    List all rules that apply to its color:
+    class="text"
+    element=<p>
+    id="mission"
+    element=<body>
+
+    What is the final color, and why?
+    Color: darkorange
+    The id="mission" is applied because the id is the most specific rule in the CSS.
+
+2-For <p id="experience">
+    List all rules that apply to its color:
+    element=<p>
+    element=<body>
+    id="experience"
+    class="text"
+    css rule=about p:last-child
+
+    What is the final color, and why?
+    Color: green
+    The CSS rule of the about p:last-child specifies more.
+
+3-For <p class="intro">
+    List all rules that apply to its color:
+    element=<p>
+    element=<body>
+    class="intro"
+    class="text"
+
+    What is the final color, and why?
+    Color: blue
+    The class="intro" is applied because it is specified later in the CSS than the class="text".
+
+4-For <p id="services-intro">
+    List all rules that apply to its color:
+    element=<p>
+    element=<body>
+    id="services-intro"
+    class="text"
+
+    What is the final color, and why?
+    Color: red
+    The id="services-intro" is applied because the id is the most specific rule in the CSS.
+
+5-For <p id="offer">
+    List all rules that apply to its color.
+    element=<p>
+    element=<body>
+    id="offer" 
+    class="text" 
+    style="color: darkblue;"(inline)
+
+    What is the final color, and why?
+    Color:darkgreen
+    Because the id="offer" have the !important property.
