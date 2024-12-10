@@ -9,6 +9,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <title>Online Store</title>
     <style>
       /* body {
@@ -46,7 +47,12 @@
             <p class="lead">Your favorite place to shop</p>
           </div>
           <div class="align-content-center">
-            <button class="btn btn-outline-secondary">View Cart</button>
+            <button class="btn btn-outline-secondary d-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart me-1 mt-1" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+              </svg>
+              View Cart
+            </button>
           </div>
         </div>
       </header>
@@ -62,29 +68,45 @@
                 <a
                   class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-dark"
                   href="#electronics"
-                  >Electronics</a
                 >
+                <svg class="bi" width="16" height="16" fill="currentColor">
+                  <use xlink:href="bootstrap-icons.svg#phone"></use>
+              </svg>
+                  Electronics
+                </a>
               </li>
               <li>
                 <a
                   class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-dark"
                   href="#books"
-                  >Books</a
                 >
+                <svg class="bi" width="16" height="16" fill="currentColor">
+                  <use xlink:href="bootstrap-icons.svg#book"></use>
+              </svg>
+                  Books
+                </a>
               </li>
               <li>
                 <a
                   class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-dark"
                   href="#home-garden"
-                  >Home & Garden</a
                 >
+                <svg class="bi" width="16" height="16" fill="currentColor">
+                  <use xlink:href="bootstrap-icons.svg#house"></use>
+              </svg>
+                  Home & Garden
+                </a>
               </li>
               <li>
                 <a
                   class="link-underline link-underline-opacity-0 link-underline-opacity-75-hover text-dark"
                   href="#clothing"
-                  >Clothing</a
                 >
+                <svg class="bi" width="16" height="16" fill="currentColor">
+                  <use xlink:href="bootstrap-icons.svg#universal-access"></use>
+              </svg>
+                  Clothing
+                </a>
               </li>
             </ul>
           </aside>
@@ -95,6 +117,7 @@
             <section class="product-grid">
               <div class="container">
                 <div class="row row-cols-auto justify-content-center">
+                  
                   <article class="card me-2 p-0">
                     <img
                       class="card-img-top"
@@ -105,6 +128,7 @@
                       <h3 class="card-title">Product 1</h3>
                       <p class="card-text">$20.00</p>
                       <button class="btn btn-outline-primary">
+                        <i class="bi bi-bag-plus"></i>
                         Add to Cart
                       </button>
                     </div>
@@ -119,6 +143,7 @@
                       <h3 class="card-title">Product 2</h3>
                       <p class="card-text">$15.00</p>
                       <button class="btn btn-outline-primary">
+                        <i class="bi bi-bag-plus"></i>
                         Add to Cart
                       </button>
                     </div>
@@ -133,6 +158,7 @@
                       <h3 class="card-title">Product 3</h3>
                       <p class="card-text">$30.00</p>
                       <button class="btn btn-outline-primary">
+                        <i class="bi bi-bag-plus"></i>
                         Add to Cart
                       </button>
                     </div>
@@ -147,6 +173,7 @@
                       <h3 class="card-title">Product 4</h3>
                       <p class="card-text">$25.00</p>
                       <button class="btn btn-outline-primary">
+                        <i class="bi bi-bag-plus"></i>
                         Add to Cart
                       </button>
                     </div>
@@ -161,6 +188,7 @@
                       <h3 class="card-title">Product 5</h3>
                       <p class="card-text">$18.00</p>
                       <button class="btn btn-outline-primary">
+                        <i class="bi bi-bag-plus"></i>
                         Add to Cart
                       </button>
                     </div>
@@ -175,6 +203,7 @@
                       <h3 class="card-title">Product 6</h3>
                       <p class="card-text">$35.00</p>
                       <button class="btn btn-outline-primary">
+                        <i class="bi bi-bag-plus"></i>
                         Add to Cart
                       </button>
                     </div>
@@ -186,7 +215,33 @@
         </div>
       </div>
       <!-- Footer -->
-      <footer class="bg-light text-center p-3">
+      <footer class="bg-light p-3 d-flex justify-content-between">
+        <form class="d-flex flex-column">
+          <h2 class="display-7">Contact Us</h2>
+          <label class="form-label" for="email">Email</label>
+          <input
+            class="form-control"
+            type="text"
+            id="email"
+            name="email"
+            required=""
+          />
+          <label class="form-label" for="textarea">How Can We Help You?</label>
+          <textarea
+            class="form-control"
+            name="textarea"
+            id="textarea"
+            rows="5"
+            cols="50"
+            required=""
+          >
+          </textarea>
+          <input
+            class="w-50 btn btn-outline-secondary"
+            type="submit"
+            value="Enviar"
+          />
+        </form>
         <p class="mb-0">&copy; 2024 Online Store. All rights reserved.</p>
       </footer>
     </div>
