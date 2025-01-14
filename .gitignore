@@ -1,5 +1,5 @@
 # folders
 sass/node_modules
-dist
+sass/dist/*
 # lock files
 package-lock.json
