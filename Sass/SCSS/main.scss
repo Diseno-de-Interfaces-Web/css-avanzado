@@ -1,9 +1,30 @@
 // @import 'color';
-
+@use "sass:map";
 // body {
 //   background-color: $primary;
 //     color: $secondary;
 // }
 
-$primary: #0e0d0d;
-@import "../node_modules/bootstrap/scss/bootstrap";
+$prueba1: #ff0000;
+$prueba2: #00ff00;
+$new-colors:(
+    "prueba1": $prueba1,
+    "prueba2": $prueba2
+);
+//@import "../node_modules/bootstrap/scss/bootstrap";
+
+//bootstrap.scss
+@import "../node_modules/bootstrap/scss/mixins/banner";
+@include bsBanner("");
+
+
+// scss-docs-start import-stack
+// Configuration
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+//aqui se cambia el color de los mapas
+$theme-colors: map.merge($theme-colors, $new-colors);
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+
